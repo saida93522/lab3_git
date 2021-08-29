@@ -17,8 +17,13 @@ def banner():
     print(f'\n{stars} \n{message} \n{stars}')
 
 
+def instructions():
+    print('Enter a sentence and this program will convert it to camelcase.')
+
+
 def main():
     banner()
+    instructions()
     sentence = input('Enter your sentence: ')
     output = camelcase(sentence)
     print(output)
